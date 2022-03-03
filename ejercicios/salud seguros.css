@@ -1,0 +1,405 @@
+*, *::before, *:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+/* ARCHIVO HTML */
+html{
+    scroll-behavior: smooth;
+}
+/* ===================================== */
+
+/* ===================================== */
+/* ---EL FONDO DE LA PAGINA EN GENERAL-- */
+/* ===================================== */
+body{
+    font-family: -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(202, 153, 157, 0.315);
+}
+/* ===================================== */
+
+
+/* ===================================== */
+/* ---------SEPARACION DEL CUERPO--------- */
+/* ===================================== */
+.cuerpo{
+    margin: 2%;
+}
+.C{
+    margin: 6vw 2%;
+}
+/* ===================================== */
+
+
+
+/*=====================================*/
+/*-------BARRA DE NAVEGACION-----------*/
+/*=====================================*/
+/* BARRA DE NAVEGACION DE INICIO */
+.header{
+    position: sticky;
+    top: 0;
+}
+.Binicio{
+    background-color: rgba(148, 0, 0, 0.836);
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px cornflowerblue;
+    box-shadow: 10px 0 20px rgb(0, 0, 0);
+    border-radius: 0.4vw;
+}
+/* ------------------------ */
+
+/* TITULO DE LA PAGINA */
+.Tpagina {
+    color: blanchedalmond;
+    font-size: 2vw;
+    padding: 0 5vw;
+    font-weight: bold;
+}
+/* -------------------- */
+
+/* COLOR DE LA PRIMERA LETRA DEL TITULO DE LA PAGINA  */
+.letrasI{
+    color: red;
+    
+}
+/* -------------------------------- */
+
+/* POSICION DE BOTONES DE NAVEGACION DE LA BARRA DE NAVEGACION */
+.naav{
+    display: flex;
+    margin-right: 3%;
+}
+/* ------------------------------ */
+
+/* BOTONES DE NAVEGACION DE LA BARRA DE NAVEGACION */
+.Binicio li a{
+    padding: 1vw 2.0vw;
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: block;
+    text-transform: uppercase;
+    color: blanchedalmond;
+    font-family: open sans-serif;
+}
+/* ------------------------------- */
+
+/* ESTILO DE LISTA DE LOS BOTONES DE INCIO */
+.Binicio ul{
+    list-style: none;
+}
+/* ------------------------ */
+
+/* ESTILOS DE BOTONES DE SUBLISTA DE BOTONES DE LA BARRA DE NAVEGACION */
+.Binicio li ul a{
+    border-top: rgba(0, 0, 0, 0.323) solid 1px;
+    width: 10vw;
+    border-radius: 10% 10% 10%;
+}
+/* ------------------------------- */
+
+/* SUB BOTONES DE BOTON "QUE QUIERES COTIZAR" DE BARRA DE NAVEGACION */
+.Binicio li ul{
+    position: absolute;
+    min-width:10vw;
+    background-color: rgba(148, 0, 0, 0.836);
+    display: none;
+}
+/* ------------------------------- */
+
+/* MOSTRAR SUB BOTONES DE BOTON "QUE QUIERES COTIZAR" DE BOTON DE BARRA DE NAVEGACION */
+.Binicio li:hover ul{
+    background-color:rgba(148, 0, 0, 0.836);
+    display: block;
+    border-radius: 10%;
+}
+/* ---------------------- */
+
+/* ESTILO DE BOTON CUANDO PASAS EL MOUSE ENCIMA DE BOTONES DE LA BATTA DE NAVEGACION */
+.Binicio li:hover, li.active{
+    background-color: rgb(158, 161, 177);
+    transition: .4s;
+    border-radius: 10% 10%;
+}
+/* --------------------------------- */
+
+/* TAMAÑO DE LETRA DEL SUB BOTON */
+.Binicio li ul a:hover{
+    font-size: 1.6vw;
+}
+/* ===================================== */
+
+
+/* ===================================== */
+/* ------INFORMACION DE LAS POLIZAS----- */
+/* ===================================== */
+
+/* CENTRAR LOS TODOS LOS TEXTOS */
+.informacion-p{
+    text-align: center;
+}
+/* -------------------------------- */
+
+/* CUADRO DE PRINCIPAL DONDE VA LA COVERTURA */
+.informacion-p .cuadro-p{
+    background-color: rgb(0, 101, 119);
+    width: 10vw;
+    height: 5vw;
+    border-radius: 10% 10%;
+    font-size: 1vw;
+}
+/* -------------------------------- */
+
+/* CUADRO DONDE VAN LOS PAGOS MENSUALES */
+.preciosC{
+    background-color: rgb(149, 149, 158);
+    margin-left: 3vw;
+    border-radius: 10px 40px 10px 10px;
+    font-size: 1vw;
+    height: 5vw;
+}
+/* -------------------------------- */
+
+/* SEPARACIONES DE CADA PRECIO DEL PAGO MENSUAL */
+.preciosC .C{
+    margin: 1vw;
+
+}
+/* -------------------------------- */
+
+/* PONER LOS CUADROS UNO AL LADO DEL OTRO */
+.informacion-p .precio1, .preciosC{
+    display: flex;
+}
+/* -------------------------------- */
+
+/* COLOR DE LETRA DE LAS COBERTURAS */
+.cuadro-p h1 span{
+    color: white;
+
+}
+/* --------------------------------- */
+
+/* MODIFICAR EL TEXTO DEL PAGO MENSUAL*/
+.preciosC span{
+    color: rgb(0, 0, 0);
+    font-size: 1.2vw;
+}
+/* --------------------------------- */
+
+/* LINEAS SEPARADORAS DE CADA PRECIO */
+.lineaS{
+    height: 5vw;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+/* ------------------------------------- */
+/* ===================================== */
+
+
+/* ===================================== */
+/* -------SECCION DOS DE LA PAGINA------ */
+/* ===================================== */
+.sec-2{
+    height: 40vw;
+    width: 100%;
+}
+.sec-2 h1{
+    width: 50%;
+    margin-top: -30vw;
+    font-size: 3vw;
+    margin-left: 3%;
+}
+/* ===================================== */
+
+
+/* ===================================== */
+/* ------------TABLA DE PRECIOS---------- */
+/* ===================================== */
+
+table{
+	caption-side: bottom;
+	/* margin-top: 3vw; */
+	margin-right: auto;
+	margin-left: 2%;
+	border-collapse: collapse;
+    text-align: center;
+    float: left;
+    margin-right: 1%;
+    border: solid 3px black;
+    font-size: 1vw;
+}
+
+td,th{
+	/* border:2px thick black; */
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+.Tcuadro{
+    background-color: rgb(185, 5, 5);
+    color: white;
+    border: black solid 2px;
+}
+
+.filacolor{
+    background-color: rgb(255, 255, 255);
+}
+
+td{
+    background-color: rgb(0, 0, 0);
+    border: black 1px dotted;
+}
+
+.filacolor2{
+    background-color: rgba(255, 255, 255, 0.644);
+    border: black solid 2px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.filacolor2:hover{
+    background-color: #940000d5;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+/* ===================================== */
+
+
+/* ===================================== */
+/* ----------CUARDO FORMULARIO---------- */
+/* ===================================== */
+
+.Cformulario{
+    margin-left: 65%;
+}
+.formulario{
+    width: 30vw;
+    height: 65vw;
+    background-color: rgba(148, 0, 0, 0.836);
+    border-radius: 10% 10%;
+    padding: 7%;
+    color: white;
+}
+.Cformulario .formulario .CF{
+    height: 3vw;
+    width: 20vw;
+    background-color: rgba(0, 0, 255, 0.411);
+    margin: auto;
+    text-align: center;
+    padding: 7px;
+}
+.Cformulario .formulario .BarraC{
+    width: 20vw;
+    height: 3vw;
+    text-align: center;
+    margin-left: 2.4vw;
+}
+.Cformulario .formulario select{
+    width: 15vw;
+    margin-left: 5.5vw;
+    height: 3vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+.Benviar{
+    width: 6vw;
+    height: 2vw;
+    margin-left: 17vw;
+}
+/* ===================================== */
+
+
+/* =====================================*/
+/* --------PIE DE PAGINA--- FOOTER ------*/
+/* ===================================== */
+.pie_pagina{
+    width: 100%;
+    background-color: rgb(148, 0, 0);
+    border-radius: 5% 5%;
+}
+
+.pie_pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie_pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie_pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie_pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;}
+
+.pie_pagina .grupo-1 .box{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie_pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(61, 0, 0);
+    text-align: center;
+    transition: all 500ms ease;
+    font-size: 30px;
+}
+
+.pie_pagina .grupo-1 .red-social a:hover{
+    color: rgb(207, 67, 67);
+}
+
+.pie_pagina .grupo-2{
+    background-color: rgba(209, 78, 78, 0.623);
+    text-align: center;
+    color: white;
+    padding: 15px 10px;
+}
+.pie_pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (min-width:800px){
+    .pie_pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    td, th{
+        background-color: black;
+    }
+
+}
+/* -------------------------------------------- */
